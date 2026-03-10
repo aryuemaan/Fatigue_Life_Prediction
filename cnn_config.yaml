@@ -1,0 +1,31 @@
+# CNN Training Config — ResNet50 (recommended for microscopy)
+arch:           resnet50
+pretrained:     true
+freeze_until:   layer2      # fine-tune layer3+layer4+head
+dropout:        0.35
+
+# Training
+epochs:         60
+batch_size:     16
+lr:             3e-4
+weight_decay:   1e-4
+loss:           gnll          # gnll | huber
+clip_grad:      1.0
+patience:       12            # early stopping
+
+# LR schedule
+scheduler:      cosine
+t_max:          60
+eta_min:        1.0e-6
+
+# Data
+labels_json:    data/synthetic/labels.json
+image_size:     224
+train_ratio:    0.80
+val_ratio:      0.10
+seed:           42
+
+# Output
+save_dir:       outputs
+run_name:       resnet50_gnll_run1
+use_mlflow:     false
