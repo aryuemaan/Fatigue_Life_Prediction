@@ -1,10 +1,10 @@
-# 🔬 Computer Vision for Fatigue Life Prediction in Lightweight Alloy Steels
+# Computer Vision for Fatigue Life Prediction in Lightweight Alloy Steels
 
 A complete, production-ready pipeline from raw microscopy/SEM images to deployed fatigue life prediction — using OpenCV, Deep Learning, and FastAPI.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 fatigue_cv/
@@ -28,7 +28,7 @@ fatigue_cv/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # 1. Install dependencies
@@ -49,7 +49,7 @@ uvicorn api.app:app --reload --port 8000
 
 ---
 
-## 🧠 Model Approaches
+## Model Approaches
 
 | Approach | File | Best For |
 |---|---|---|
@@ -60,7 +60,7 @@ uvicorn api.app:app --reload --port 8000
 
 ---
 
-## 📊 Features Extracted
+## Features Extracted
 
 - **Crack morphology**: length, width, area via contour analysis
 - **Grain structure**: size distribution, aspect ratio
@@ -71,7 +71,7 @@ uvicorn api.app:app --reload --port 8000
 
 ---
 
-## 🎯 Prediction Output
+## Prediction Output
 
 - **Fatigue life (cycles)**: Log-scale regression output (N_f)
 - **Confidence interval**: ±σ prediction bounds
@@ -80,7 +80,7 @@ uvicorn api.app:app --reload --port 8000
 
 ---
 
-## 🌐 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -91,7 +91,7 @@ uvicorn api.app:app --reload --port 8000
 
 ---
 
-## 📈 Model Performance (Benchmark)
+## Model Performance (Benchmark)
 
 | Metric | Transfer Learning | CNN | Hybrid |
 |---|---|---|---|
@@ -101,7 +101,7 @@ uvicorn api.app:app --reload --port 8000
 
 ---
 
-## 🔬 Physical Background
+## Physical Background
 
 Fatigue life prediction in lightweight alloys (Al, Ti, Mg steels) depends on:
 1. **Microstructure features** — grain size, orientation, precipitates
